@@ -31,9 +31,10 @@ body {
 
 .btn {
   display: inline-block;
-  padding: 10px;
+  padding: 12px 20px;
   color: white;
   background: #333333;
+  text-decoration: none;
 }
 
 /* Main navigation */
@@ -56,6 +57,7 @@ body {
   display: block;
   color: black;
   padding: 16px;
+  text-decoration: none;
 }
 
 .main-nav ul li a:hover,
@@ -112,9 +114,8 @@ header {
   margin: 44px 0;
 }
 
-.membership1 h1,
-.membership2 h1 {
-  font-size: 3rem;
+.membership-price {
+  font-size: 2.5rem;
   font-weight: lighter;
 }
 
