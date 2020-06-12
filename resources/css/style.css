@@ -8,7 +8,6 @@ html {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   text-rendering: optimizeLegibility;
-  font-weight: 16px;
 }
 
 body {
@@ -68,7 +67,7 @@ body {
 
 /* Header */
 header {
-  height: 90vh;
+  /* height: 90vh; */
   display: grid;
   grid-template-columns: auto 250px;
   grid-template-areas:
@@ -78,17 +77,21 @@ header {
 }
 
 .web-presence {
+  display: grid;
+  align-content: center;
   grid-area: banner;
   background: url(img/showcase.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: white;
-  position: relative;
 }
 
 .web-presence__text {
-  position: absolute;
-  top: 50%;
-  left: 50px;
-  transform: translate(0, -50%);
+  display: grid;
+  padding: 50px;
+  justify-items: start;
+  gap: 30px;
 }
 
 .web-presence__text h1 {
@@ -97,7 +100,6 @@ header {
 
 .web-presence__text p {
   font-size: 1.2rem;
-  margin: 15px 0;
 }
 
 .membership1,
