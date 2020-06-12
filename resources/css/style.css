@@ -70,7 +70,7 @@ body {
 header {
   height: 90vh;
   display: grid;
-  grid-template-columns: auto 240px;
+  grid-template-columns: auto 250px;
   grid-template-areas:
     'banner membership1'
     'banner membership2';
@@ -102,7 +102,7 @@ header {
 
 .membership1,
 .membership2 {
-  padding: 20px;
+  padding: 10px 25px;
   text-align: center;
   background-color: white;
 }
@@ -114,19 +114,87 @@ header {
   margin: 44px 0;
 }
 
-.membership-price {
+.membership1 .membership-price,
+.membership2 .membership-price {
   font-size: 2.5rem;
   font-weight: lighter;
+  margin-top: 72px;
 }
 
 .membership1 .btn,
 .membership2 .btn {
   width: 100%;
 }
+
 .membership1 {
   grid-area: membership1;
 }
 
 .membership2 {
   grid-area: membership2;
+}
+
+/* Services section */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.services > div {
+  background-color: #dddddd;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 15px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services > div ion-icon {
+  font-size: 70px;
+}
+
+/* Web business section */
+.web-business {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  padding: 40px;
+}
+
+.web-business img {
+  width: 100%;
+}
+
+.web-business .text {
+  padding: 20px;
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: 20px;
+}
+
+.web-business .text h2 {
+  text-transform: capitalize;
+}
+
+/* Images section */
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.images img {
+  width: 100%;
+  height: 200px;
+}
+
+/* Footer */
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
