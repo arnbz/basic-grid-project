@@ -20,3 +20,36 @@
     margin-top: 44px;
   }
 }
+
+@media (max-width: 414px) {
+  .container {
+    margin: 20px 20px;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .main-nav ul li a {
+    gap: 7px;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'banner'
+      'membership1'
+      'membership2';
+  }
+
+  .web-presence__text {
+    padding: 14px;
+  }
+
+  .web-business {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0;
+  }
+}
